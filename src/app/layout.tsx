@@ -69,12 +69,12 @@ export default function RootLayout({
           }}
         />
       
-        <script dangerouslySetInnerHTML={{ __html: `window.__WIDGET_API_URL="http://localhost:3000";window.__PROJECT_ID="clinica-del-pie-sonia-gonzalez";` }} />
+        <script dangerouslySetInnerHTML={{ __html: `window.__WIDGET_API_URL="https://automatizacion-webs.vercel.app";window.__PROJECT_ID="clinica-del-pie-sonia-gonzalez";` }} />
 
         <script
-          src="http://localhost:3000/widget.js"
+          src="https://automatizacion-webs.vercel.app/widget.js"
           data-project-name="Clinica del Pie - Sonia González"
-          data-api-url="http://localhost:3000"
+          data-api-url="https://automatizacion-webs.vercel.app"
           data-project-id="clinica-del-pie-sonia-gonzalez"
           data-primary-color="#44aa7d"
           defer
@@ -89,7 +89,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: `
           (function(){
             var sid=Math.random().toString(36).slice(2);
-            var api="http://localhost:3000/api/widget/track";
+            var api="https://automatizacion-webs.vercel.app/api/widget/track";
             var pid="clinica-del-pie-sonia-gonzalez";
             function t(e){fetch(api,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({projectId:pid,event:e,sessionId:sid}),keepalive:true}).catch(function(){});}
             t("page_view");
