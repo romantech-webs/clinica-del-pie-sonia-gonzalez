@@ -1,307 +1,345 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Clinica del Pie - Sonia González",
+  logo: "/images/logo.png",
+  tagline: "Fisioterapia y Podología especializada en Córdoba",
+  description: "Clínica del Pie - Sonia González es tu centro de fisioterapia y podología de confianza en Córdoba, Álava. Ofrecemos fisioterapia manual avanzada, punción seca, estudios biomecánicos de la pisada y plantillas personalizadas a medida. Con 5 estrellas en Google y más de 106 reseñas, nuestro equipo de profesionales combina técnicas manuales especializadas con un trato cercano y personalizado para tu completa recuperación.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#44aa7d",
+    secondary: "#1b171e",
+    accent: "#1b171e",
+    neutral: "#f0f8f5"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "610 14 52 60",
+  whatsapp: "+34610145260",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de fisioterapia.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Calle Olimpo, 1 (Avd. Libia S/N) Junto gasolinera Carrefour Zahira, Sureste, 14014 Córdoba, España",
+    city: "Córdoba",
+    province: "Álava",
+    postalCode: "14014",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=6010036947059891316&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Clinica%20del%20Pie%20-%20Sonia%20Gonz%C3%A1lez%20%4037.8937%2C-4.75033&z=16&output=embed",
+  coordinates: {
+    lat: 37.8937,
+    lng: -4.75033
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - jueves",
+      hours: "9:00–20:00"
+    },
+    {
+      days: "viernes",
+      hours: "9:00–14:00"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 5,
+    count: 106,
+    url: "https://maps.google.com/?cid=6010036947059891316&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Enrique Lozano Bermudo",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Adrián, fisioterapeuta de esta clínica,es un gran profesional.Siempre muy atento,su técnica es manual (nada de aparatología). Al terminar cada sesión te da la valoración del estado en que se encuentra la zona tratada y te recomienda ejercicios de movilidad para que mejores desde casa.Se nota que le apasiona su trabajo, y como paciente lo notas.Si buscas fisioterapeuta, no lo pienses más, seguro acabarás recomendándolo como yo =)",
+        date: "Hace 3 meses"
       },
       {
-        author: "Javier Padilla",
+        author: "Juan Pineda",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Acudí a la clínica para una valoración podológica y la experiencia fue muy satisfactoria. El trato fue profesional y cercano, me explicaron en todo momento el diagnóstico y el tratamiento a realizar, y consiguieron aliviar completamente el malestar que presentaba. Angie, la profesional que me atendió, realizó un trabajo excelente. Muy satisfecho con la atención recibida. Clínica totalmente recomendable",
+        date: "Hace 2 meses"
       },
       {
-        author: "Melanie Ponce",
+        author: "Veronica Moraño",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "He venido en varias ocasiones con mis hijos porque me recomendaron Adrián y no puedo estar más contenta, súper profesional y siempre te aconseja lo mejor, si necesitas pocas sesiones o solo una te lo dice y no te saca el dinero!!! Además  si en cualquier momento necesitas punción seca lo tiene disponible que en muchas clínicas no hay!!! Recomendado 100%",
+        date: "Hace 5 meses"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Cris Sanca",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Inmejorable, se notan los años de experiencia y el gusto por su profesión. Fui para un estudio de la pisada y las plantillas a medida son muy cómodas y el resultado muy satisfactorio.",
+        date: "Hace 2 semanas"
       },
-    ],
+      {
+        author: "Rocio Avila Pedraza",
+        rating: 5,
+        text: "Buena clínica. En especial destacar el trabajo de Adrián que es muy profesional. Buen trabajo manual y con la punción seca. Recomendable 100%",
+        date: "Hace 5 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "fisioterapia-manual",
+      name: "Fisioterapia Manual",
+      description: "Técnicas manuales especializadas sin aparatología para tratar lesiones musculares y articulares. Nuestros fisioterapeutas aplican métodos avanzados adaptados a cada paciente, garantizando resultados efectivos. Al finalizar cada sesión recibirás valoración del estado de tu lesión y recomendaciones personalizadas de ejercicios para continuar tu recuperación en casa.",
+      benefits: [
+        "Tratamiento 100% manual y personalizado",
+        "Valoración detallada en cada sesión",
+        "Ejercicios específicos para casa"
+      ],
+      icon: "Hand"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "puncion-seca",
+      name: "Punción Seca",
+      description: "Técnica avanzada para el tratamiento de puntos gatillo miofasciales y contracturas musculares profundas. Eliminamos el dolor crónico y las tensiones musculares con precisión. Disponible de forma inmediata cuando tu tratamiento lo requiere, sin esperas ni derivaciones a otros centros.",
+      benefits: [
+        "Alivio inmediato del dolor muscular",
+        "Tratamiento de contracturas profundas",
+        "Disponibilidad inmediata en clínica"
+      ],
+      icon: "Target"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "estudio-pisada",
+      name: "Estudio Biomecánico de la Pisada",
+      description: "Análisis completo y personalizado de tu forma de caminar y pisar para detectar alteraciones biomecánicas. Realizamos una valoración podológica exhaustiva con diagnóstico detallado. Te explicamos en todo momento los hallazgos y el tratamiento más adecuado para corregir problemas posturales y prevenir lesiones.",
+      benefits: [
+        "Diagnóstico preciso y detallado",
+        "Prevención de lesiones futuras",
+        "Explicación clara del tratamiento"
+      ],
+      icon: "Activity"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "plantillas-medida",
+      name: "Plantillas Personalizadas a Medida",
+      description: "Diseño y fabricación de plantillas ortopédicas totalmente personalizadas según tu estudio biomecánico. Elaboradas con materiales de alta calidad para garantizar máxima comodidad y durabilidad. Resultados muy satisfactorios respaldados por años de experiencia en podología especializada.",
+      benefits: [
+        "Diseño 100% personalizado",
+        "Máxima comodidad y adaptación",
+        "Resultados comprobados y duraderos"
+      ],
+      icon: "Heart"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "fisioterapia-deportiva",
+      name: "Fisioterapia Deportiva",
+      description: "Tratamiento especializado para deportistas y personas activas que buscan recuperarse de lesiones o mejorar su rendimiento. Combinamos fisioterapia manual con técnicas avanzadas para una recuperación óptima. Programas adaptados a tu nivel de actividad y objetivos deportivos específicos.",
+      benefits: [
+        "Recuperación acelerada de lesiones",
+        "Prevención de futuras lesiones",
+        "Mejora del rendimiento deportivo"
+      ],
+      icon: "Dumbbell"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "tratamiento-infantil",
+      name: "Fisioterapia y Podología Infantil",
+      description: "Atención especializada para niños con problemas de pisada, postura o lesiones musculares. Tratamos a los más pequeños con profesionalidad y cercanía, creando un ambiente de confianza. Valoramos cada caso de forma individual y recomendamos solo los tratamientos realmente necesarios, sin alargar sesiones innecesarias.",
+      benefits: [
+        "Trato especializado para niños",
+        "Ambiente cercano y de confianza",
+        "Honestidad en el número de sesiones"
+      ],
+      icon: "Heart"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "rehabilitacion",
+      name: "Rehabilitación Personalizada",
+      description: "Programas de rehabilitación diseñados específicamente para tu lesión o cirugía. Seguimiento continuo de tu evolución con ajustes constantes del tratamiento según tu progreso. Te acompañamos desde la primera sesión hasta tu recuperación completa con ejercicios progresivos y adaptados.",
+      benefits: [
+        "Plan de tratamiento individualizado",
+        "Seguimiento continuo de tu evolución",
+        "Ejercicios progresivos adaptados"
+      ],
+      icon: "Activity"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "tratamiento-dolor",
+      name: "Tratamiento del Dolor Crónico",
+      description: "Abordaje integral del dolor persistente mediante técnicas manuales avanzadas y punción seca. Identificamos la causa real de tu dolor para tratarlo de raíz, no solo los síntomas. Conseguimos aliviar completamente el malestar con tratamientos efectivos y duraderos.",
+      benefits: [
+        "Eliminación de la causa del dolor",
+        "Técnicas avanzadas y efectivas",
+        "Alivio completo y duradero"
+      ],
+      icon: "Zap"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Contacta con nosotros",
+      description: "Llama al 610 14 52 60 o envíanos un WhatsApp para solicitar tu cita. Te atenderemos de forma cercana y profesional, ajustándonos a tus horarios y necesidades."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Valoración profesional completa",
+      description: "Realizamos una evaluación exhaustiva de tu lesión o problema podológico. Te explicamos en todo momento el diagnóstico detallado, las causas y el tratamiento más adecuado para tu caso específico."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Tratamiento manual personalizado",
+      description: "Aplicamos técnicas manuales especializadas, punción seca si es necesaria, o diseñamos tus plantillas personalizadas. Sin aparatología innecesaria, solo el tratamiento que realmente necesitas. Te indicamos honestamente cuántas sesiones requieres."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Seguimiento y recuperación completa",
+      description: "Al finalizar cada sesión valoramos tu evolución y te damos ejercicios específicos para mejorar desde casa. Seguimiento continuo hasta tu completa recuperación con recomendaciones personalizadas de movilidad."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "5 Estrellas con más de 106 Reseñas Reales",
+      description: "Nuestros pacientes nos avalan con una valoración perfecta de 5 estrellas en Google y más de 106 opiniones positivas. Destacan nuestra profesionalidad, el trato cercano, la honestidad en los tratamientos y los resultados efectivos que conseguimos. Una prueba real de nuestro compromiso con tu recuperación.",
+      icon: "Heart"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Fisioterapia 100% Manual y Personalizada",
+      description: "Trabajamos exclusivamente con técnicas manuales especializadas, sin depender de aparatología. Cada tratamiento es completamente personalizado según tu lesión específica. Al finalizar cada sesión recibes valoración detallada de tu evolución y ejercicios específicos para continuar tu recuperación en casa.",
+      icon: "Hand"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Honestidad y Transparencia Total",
+      description: "Te indicamos desde el principio cuántas sesiones necesitas realmente, sin alargar tratamientos innecesarios para sacar más dinero. Si tu lesión requiere solo una o pocas sesiones, te lo decimos claramente. Nuestra prioridad es tu recuperación, no el número de citas.",
+      icon: "Target"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Equipo con Años de Experiencia",
+      description: "Nuestros profesionales cuentan con años de experiencia en fisioterapia y podología especializada. Se nota la pasión por nuestro trabajo en cada tratamiento. Disponemos de técnicas avanzadas como punción seca de forma inmediata, sin derivaciones a otros centros, y realizamos estudios biomecánicos con plantillas personalizadas de máxima calidad.",
+      icon: "Activity"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Adrián",
+      role: "Fisioterapeuta Especializado",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
+      bio: "Profesionales apasionados por la fisioterapia y la rehabilitación. En Clinica del Pie - Sonia González nos dedicamos a devolver la calidad de vida a nuestros pacientes con tratamientos personalizados y tecnología avanzada."
     },
+    {
+      name: "Angie",
+      role: "Podóloga Especializada",
+      image: "/images/team/placeholder.jpg",
+      bio: "Profesionales apasionados por la fisioterapia y la rehabilitación. En Clinica del Pie - Sonia González nos dedicamos a devolver la calidad de vida a nuestros pacientes con tratamientos personalizados y tecnología avanzada."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/hero.webp",
+      alt: "Clinica del Pie - Sonia González - Imagen 1"
+    },
+    {
+      src: "/images/gallery/2.webp",
+      alt: "Clinica del Pie - Sonia González - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "Clinica del Pie - Sonia González - Imagen 3"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Qué tipo de tratamientos ofrece Clínica del Pie - Sonia González?",
+      answer: "En Clínica del Pie - Sonia González ofrecemos fisioterapia manual especializada, punción seca, estudios biomecánicos de la pisada, plantillas personalizadas a medida, fisioterapia deportiva y tratamientos podológicos para adultos y niños. Todos nuestros tratamientos son 100% manuales y personalizados, sin aparatología innecesaria, enfocados en tu recuperación completa."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Cuántas sesiones necesitaré para recuperarme?",
+      answer: "En nuestra clínica trabajamos con total transparencia y honestidad. Te indicamos desde el principio cuántas sesiones necesitas realmente, sin alargar tratamientos innecesarios. Si tu lesión requiere solo una o pocas sesiones, te lo decimos claramente. Al finalizar cada sesión valoramos tu evolución y ajustamos el plan de tratamiento según tu progreso real."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Utilizan aparatos o solo técnicas manuales?",
+      answer: "Nuestro enfoque es principalmente manual, sin depender de aparatología. Nuestros fisioterapeutas aplican técnicas manuales especializadas que han demostrado ser más efectivas para la mayoría de lesiones. Además, disponemos de punción seca cuando el tratamiento lo requiere, una técnica avanzada que no todos los centros ofrecen de forma inmediata."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Cómo funciona el estudio de la pisada y las plantillas?",
+      answer: "Realizamos un estudio biomecánico completo de tu pisada con una valoración podológica exhaustiva. Te explicamos detalladamente el diagnóstico y el tratamiento recomendado. Si necesitas plantillas, las diseñamos completamente personalizadas y a medida según tu estudio, garantizando máxima comodidad y resultados muy satisfactorios respaldados por años de experiencia."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Atienden a niños en la clínica?",
+      answer: "Sí, atendemos a niños con total profesionalidad y cercanía. Tratamos problemas de pisada, postura y lesiones musculares infantiles con un enfoque especializado. Muchas familias nos recomiendan precisamente por nuestro trato cercano con los más pequeños y por nuestra honestidad al indicar solo los tratamientos realmente necesarios, sin alargar sesiones innecesarias."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Qué es la punción seca y cuándo se aplica?",
+      answer: "La punción seca es una técnica avanzada para tratar puntos gatillo miofasciales, contracturas profundas y dolor crónico muscular. En Clínica del Pie - Sonia González disponemos de esta técnica de forma inmediata cuando tu tratamiento lo requiere, sin necesidad de derivarte a otros centros. Muchos pacientes destacan su efectividad para eliminar contracturas y dolor persistente."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Por qué tiene Clínica del Pie - Sonia González tan buenas valoraciones?",
+      answer: "Contamos con 5 estrellas en Google y más de 106 reseñas positivas de pacientes reales. Nuestros clientes valoran especialmente la profesionalidad de nuestro equipo, el trato cercano y personalizado, la honestidad al indicar solo los tratamientos necesarios, y los resultados efectivos que conseguimos. Se nota la pasión por nuestro trabajo y el compromiso real con la recuperación de cada paciente."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Cómo puedo solicitar cita en Clínica del Pie - Sonia González?",
+      answer: "Puedes solicitar tu cita llamando directamente al 610 14 52 60 o enviándonos un mensaje por WhatsApp al mismo número. Te atenderemos de forma cercana y profesional, ajustándonos a tus horarios y necesidades. Estamos ubicados en Córdoba, Álava, y estaremos encantados de ayudarte en tu recuperación."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Clinica del Pie - Sonia González",
+    defaultTitle: "Fisioterapia y Podología en Córdoba | Clínica del Pie",
+    defaultDescription: "Clínica del Pie - Sonia González en Córdoba, Álava. Fisioterapia manual, punción seca, estudios de pisada y plantillas personalizadas. 5★ en Google. Llama al 610 14 52 60",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "fisioterapia Córdoba",
+      "podología Córdoba",
+      "fisioterapeuta Córdoba Álava",
+      "Clinica del Pie Sonia González",
+      "punción seca Córdoba",
+      "estudio pisada Córdoba",
+      "plantillas personalizadas Córdoba",
+      "fisioterapia manual Córdoba",
+      "podólogo Córdoba",
+      "fisioterapia deportiva Córdoba",
+      "rehabilitación Córdoba",
+      "tratamiento dolor Córdoba"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Clinica del Pie - Sonia González",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Calle Olimpo, 1 (Avd. Libia S/N) Junto gasolinera Carrefour Zahira, Sureste, 14014 Córdoba, España, Córdoba, Álava"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Fisioterapia",
+    "en Córdoba"
+  ],
+  heroDescription: "En Clínica del Pie - Sonia González te ofrecemos fisioterapia manual especializada y tratamientos podológicos avanzados en Córdoba. Nuestro equipo de profesionales expertos utiliza técnicas manuales, punción seca y estudios biomecánicos personalizados para garantizar tu recuperación completa. Con valoración de 5 estrellas y más de 106 opiniones positivas, te acompañamos en cada paso hacia tu bienestar.",
+  specialty: "Fisioterapia y Podología",
+  ctaLabel: "Tu Recuperación",
+  ctaHeadline: "¿Listo para recuperar tu bienestar y movilidad?",
+  ctaDescription: "Solicita tu cita de valoración en Clínica del Pie - Sonia González. Te ofrecemos un diagnóstico profesional y un plan de tratamiento personalizado para tu recuperación completa.",
+  statsLabel: "Pacientes",
+  schemaType: "PhysicalTherapy",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
